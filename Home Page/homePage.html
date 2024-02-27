@@ -9,7 +9,7 @@
 <body>
     <!-- NavBar Starts Here -->
     <nav>
-        <div class="grid grid-cols-2 min-[910px]:grid-cols-3 m-4 mx-10 gap-10">
+        <div class="grid grid-cols-2 min-[910px]:grid-cols-3 m-4 mx-8 gap-10">
             <!-- Left Portion -->
             <header class="min-[910px]:col-span-2 flex gap-10 justify-start items-center">
                 <!-- PageLgo -->
@@ -21,7 +21,7 @@
     
                 <!-- NavList -->
                 <div class="hidden min-[910px]:flex text-lg gap-10 text-[#333333]">
-                    <a href="#Everything" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Everythin</a>
+                    <a href="#Everything" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Everything</a>
                     <a href="#Groceries" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Groceries</a>
                     <a href="#Juice" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Juice</a>
                 </div>
@@ -45,9 +45,9 @@
     
                 <!-- Menu button -->
                 <div class="min-[910px]:hidden">
-                    <button class="h-10 w-10 pl-3 bg-[#8bc34a]">
+                    <button class="h-10 w-10 pl-2 bg-[#8bc34a]">
                         <a href="#menu">
-                            <img src="../Images/menu-icon.png" alt="menu-icon" class="h-4 w-4 ">
+                            <img src="../Images/menu.png" alt="menu-icon">
                         </a>
                     </button>
                 </div>
@@ -65,6 +65,41 @@
     </nav>
     <!-- NavBar Ends Here -->
 
-    
+    <!-- Hero Section Stats -->
+    <div class="flex flex-col items-center md:grid md:grid-cols-2 md:py-20 bg-[#f8f6f3]">
+        <!-- Info Section -->
+        <div class="flex flex-col items-center my-16 md:my-4 md:items-start md:order-last md:px-8 ">
+            <div>
+                <div class="flex justify-center md:justify-start md:pb-6">
+                    <img src="../Images/leaf-logo.png" alt="leaf-logo">
+                </div>
+                <div class="font-medium text-[#111111] text-lg">
+                    <p>Best Quality Products</p>
+                </div>
+            </div>
+
+            <div class="font-bold text-[2.1rem] text-[#111111] my-3 max-w-xl text-center md:text-6xl md:text-left md:font-bold md:leading-[4rem]">
+                <h1>Join The Organic Movement!</h1>
+            </div>
+
+            <div class="px-3 md:px-1">
+                <p class="text-[#333333] text-center max-w-[700px] mb-10 md:text-left md:max-w-[34rem] md:text-base md:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+
+            <button class="bg-[#6a9739] hover:bg-[#8bc34a] hover:transition-all hover:ease-linear text-white h-12 w-44 border-0 rounded-md">
+                <a href="#Everything" class="flex justify-center items-center gap-3">
+                    <img src="../Images/shopping-cart.png" alt="cart-logo">
+                    <h3 class="font-semibold text-sm">SHOP NOW</h3>
+                </a>
+            </button>
+        </div>
+
+        <!-- Image Section -->
+        <div class="md:flex md:justify-end">
+            <img src="../Images/organic-products-hero.png" alt="organic-products-hero">
+        </div>
+    </div>
+    <!-- Hero Section Ends -->
+
 </body>
 </html>
