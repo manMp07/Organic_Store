@@ -9,9 +9,9 @@
 <body>
     <!-- NavBar Starts Here -->
     <nav>
-        <div class="grid grid-cols-2 min-[910px]:grid-cols-3 m-4 mx-8 gap-10">
+        <div class="flex justify-between m-4 mx-8 gap-10">
             <!-- Left Portion -->
-            <header class="min-[910px]:col-span-2 flex gap-10 justify-start items-center">
+            <header class="flex gap-10 items-center">
                 <!-- PageLgo -->
                 <div>
                     <a href="#logo">
@@ -28,7 +28,7 @@
             </header>
     
             <!-- Right Portion -->
-            <div class="flex gap-8 justify-end items-center">
+            <div class="flex gap-8 items-center">
                 <!-- About Contact -->
                 <div class="hidden min-[910px]:flex text-lg gap-10 text-[#333333]">
                     <a href="#About" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">About</a>
@@ -38,8 +38,15 @@
                 <!-- Cart -->
                 <div class="pt-1">
                     <a href="#cart" class="flex gap-4 text-[#8bc34a]">
-                        <span class="font-bold">&#8377;0.00</span>
-                        <img src="../Images/shopping-basket_2.png" alt="Basket-icon" class="h-5 w-4">
+                        <span class="font-bold">&#8377; 0.00</span>
+                        <div class="relative">
+                            <img src="../Images/shopping-basket_2.png" alt="Basket-icon" class="h-5 w-5">
+                            <div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+                                <span class="flex items-center justify-center h-5 w-5 text-xs font-bold border-none rounded-full bg-[#8bc34a] text-black">
+                                    0
+                                </span>
+                            </div>
+                        </div>
                     </a>
                 </div>
     
@@ -272,7 +279,12 @@
                 <!-- Item4 -->
                 <div class="flex flex-col gap-2">
                     <!-- Image -->
-                    <div>
+                    <div class="relative">
+                        <div class="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4">
+                            <span class="flex items-center justify-center h-12 w-12 border-none rounded-full bg-[#8bc34a] text-black">
+                                Sale!
+                            </span>
+                        </div>
                         <a href="#edible-oil">
                             <img src="../Images/edible-oil.jpg" alt="edible-oil" class="w-full">
                         </a>
