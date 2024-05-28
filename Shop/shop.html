@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>Shop - Organic Store</title>
+</head>
+<body>
+    <!-- NavBar Starts Here -->
+    <nav>
+        <div class="flex justify-between m-4 mx-8 gap-10">
+            <!-- Left Portion -->
+            <header class="flex gap-10 items-center">
+                <!-- PageLgo -->
+                <div>
+                    <a href="#logo">
+                        <img src="../Images/organic-store-logo.svg" alt="OrganicStore-Logo" class="h-16 min-[910px]:h-20">
+                    </a>
+                </div>
+    
+                <!-- NavList -->
+                <div class="hidden min-[910px]:flex text-lg gap-10 text-[#333333]">
+                    <a href="#Everything" class="text-[#8bc34a]">Everything</a>
+                    <a href="#Groceries" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Groceries</a>
+                    <a href="#Juice" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Juice</a>
+                </div>
+            </header>
+    
+            <!-- Right Portion -->
+            <div class="flex gap-8 items-center">
+                <!-- About Contact -->
+                <div class="hidden min-[910px]:flex text-lg gap-10 text-[#333333]">
+                    <a href="#About" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">About</a>
+                    <a href="#Contact" class="hover:text-[#8bc34a] hover:transition-all hover:ease-linear">Contact</a>
+                </div>
+    
+                <!-- Cart -->
+                <div class="pt-1">
+                    <a href="#cart" class="flex gap-4 text-[#8bc34a]">
+                        <span class="font-bold">&#8377;0.00</span>
+                        <div class="relative">
+                            <img src="../Images/shopping-basket_2.png" alt="Basket-icon" class="h-5 w-5">
+                            <div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+                                <span class="flex items-center justify-center h-5 w-5 text-xs font-bold border-none rounded-full bg-[#8bc34a] text-black">
+                                    0
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Menu button -->
+                <div class="min-[910px]:hidden">
+                    <button class="h-10 w-10 pl-2 bg-[#8bc34a]">
+                        <a href="#menu">
+                            <img src="../Images/menu.png" alt="menu-icon">
+                        </a>
+                    </button>
+                </div>
+                
+                <!-- Account button -->
+                <div class="hidden min-[910px]:block">
+                    <button class="h-6 w-6 pt-2">
+                        <a href="#acccount">
+                            <img src="../Images/account-icon.png" alt="account-icon">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Ends Here -->
+
+    <main class="bg-[#F8F6F3]">
+
+        <aside>
+            <!-- Search Bar -->
+            <div>
+                <form>
+                    <input type="text" placeholder="Search Products...">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.42-1.42l4.29 4.3a1 1 0 01-1.42 1.42l-4.29-4.3zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Filter -->
+            <div>
+                <!-- Active Filter -->
+                <div class="hidden">
+                    <h1>Active Filters</h1>
+                    <h2>PRICE:</h2>
+                    <p>From &#8377;10 to &#8377;30</p>
+                    <button>Clear All</button>
+                </div>
+
+                <div>
+                    <h1>Filter by price</h1>
+                    <div>
+                        <input type="range" min="10" max="40" value="25">
+                        <div>
+                            <span>&#8377;10</span>
+                            <span>&#8377;40</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Pages -->
+            <ul>
+                <li><a href="#Groceries">Groceries (10)</a></li>
+                <li><a href="#Juice">Juice (9)</a></li>
+            </ul>
+        </aside>
+
+        <!-- Verical Separator Line -->
+        <div class="hidden md:block w-px bg-gray-300 mx-4"></div>
+
+        <!-- Shopping Section -->
+        <div>
+            <div>
+                <div>
+                    <a href="#homePage">Home</a>
+                    <p>/ Shop</p>
+                </div>
+                <div>
+                    <h1>Shop</h1>
+                </div>
+            </div>
+
+            <div>
+                <p>Showing 1–9 of 12 results</p>
+                <select>
+                    <option value="Default" selected>Default Sorting</option>
+                    <option value="Popularity">Sort by Popularity</option>
+                    <option value="AvgRating">Sort by Average Rating</option>
+                    <option value="Latest">Sort by Latest</option>
+                    <option value="Low to High">Sort by Price : Low to High</option>
+                    <option value="High to Low">Sort by Price : High to Low</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section Starts -->
+    <footer class="bg-[#001524] text-white flex flex-col px-5 py-16 2xl:px-40 2xl:gap-9">
+        <!-- Top -->
+        <div class="flex flex-col gap-16 min-[545px]:grid min-[545px]:grid-rows-1 min-[545px]:grid-cols-3 min-[545px]:gap-5 min-[920px]:grid-cols-4 2xl:gap-0">
+            <!-- 1st block -->
+            <div class="flex flex-col gap-10 items-center min-[545px]:items-start min-[920px]:col-span-2">
+                <div>
+                    <img src="../Images/organic-store-white-logo.png" class="h-20">
+                </div>
+                <div class="text-[#ffffffa8] text-center font-bold italic px-3 min-[545px]:text-left min-[920px]:pr-44">
+                    <p>Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque.</p>
+                </div>
+            </div>
+
+            <!-- 2nd Block -->
+            <div class="flex flex-col items-center text-center gap-10 min-[920px]:items-start min-[920px]:text-left">
+                <div class="flex flex-col gap-3 min-[920px]:gap-5">
+                    <div class="text-white text-2xl font-semibold">
+                        <h2>Quick Links</h2>
+                    </div>
+
+                    <ul class="text-[#FFFFFFA8]">
+                        <li><a href="#" class="hover:text-white transition-all duration-300">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Cart</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Checkout</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">My Account</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-3 min-[920px]:gap-5">
+                    <div class="text-white text-2xl font-semibold">
+                        <h2>Site Links</h2>
+                    </div>
+
+                    <ul class="text-[#FFFFFFA8]">
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Shopping Details</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Offers Coupons</a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3rd Block -->
+            <div class="flex flex-col gap-10 items-center text-center min-[545px]:items-start  min-[545px]:text-left">
+                <div class="flex flex-col gap-5">
+                    <div class="text-white text-xl font-semibold min-[920px]:text-2xl">
+                        <h2>Download Our Mobile App</h2>
+                    </div>
+                    <div class="text-[#ffffffa8]">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non tincidunt libero interdum sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <div class="text-white text-xl font-semibold min-[920px]:text-2xl">
+                        <h2>Quick Links</h2>
+                    </div>
+                    <ul class="text-[#8bc34a]">
+                        <li><a href="#" class="hover:text-[#628a33] transition-all duration-300">Know More About Us</a></li>
+                        <li><a href="#" class="hover:text-[#628a33] transition-all duration-300">Visit Store</a></li>
+                        <li><a href="#" class="hover:text-[#628a33] transition-all duration-300">Let's Connect</a></li>
+                        <li><a href="#" class="hover:text-[#628a33] transition-all duration-300">Locate Stores</a></li>
+                    </ul>
+                </div>
+
+                <!-- PlayStore & Appstore -->
+                <div class="flex gap-5">
+                    <div>
+                        <img src="../Images/play_store.png" alt="play_store">
+                    </div>
+                    <div>
+                        <img src="../Images/app_store.png" alt="app_store">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="m-10 border-none h-[0.1px] bg-[#ffffff1e]">
+
+        <!-- Bottom -->
+        <div class="text-center flex flex-col items-center justify-center gap-10 min-[545px]:flex-row min-[545px]:justify-between min-[545px]:mx-5">
+            <div class="text-[#ffffffa8]">
+                <p>Copyright © 2024 | Organic Store</p>
+            </div>
+
+            <div class="flex gap-5">
+                <a href="#"><img src="../Images/instagram.svg" class="h-5"></a>
+                <a href="#"><img src="../Images/twitter.svg" class="h-5"></a>
+                <a href="#"><img src="../Images/linkedin.svg" class="h-5"></a>
+                <a href="#"><img src="../Images/github.svg" class="h-5"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+</body>
+</html>
