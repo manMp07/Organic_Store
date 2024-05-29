@@ -14,7 +14,7 @@
             <header class="flex gap-10 items-center">
                 <!-- PageLgo -->
                 <div>
-                    <a href="#logo">
+                    <a href="../Home Page/homePage.html">
                         <img src="../Images/organic-store-logo.svg" alt="OrganicStore-Logo" class="h-16 min-[910px]:h-20">
                     </a>
                 </div>
@@ -72,16 +72,16 @@
     </nav>
     <!-- NavBar Ends Here -->
 
-    <main class="bg-[#F8F6F3]">
+    <main class="bg-[#F8F6F3] flex px-28 py-16">
 
-        <aside>
+        <aside class="flex flex-col w-1/4 gap-10 px-5">
             <!-- Search Bar -->
-            <div>
-                <form>
-                    <input type="text" placeholder="Search Products...">
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.42-1.42l4.29 4.3a1 1 0 01-1.42 1.42l-4.29-4.3zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+            <div class="w-full max-w-md">
+                <form class="flex gap-5">
+                    <input type="text" placeholder="Search products..." class="w-[70%] px-4 py-2 border border-gray-300 rounded-md">
+                    <button type="submit" class="px-3 bg-[#6A9739] text-white rounded-md hover:bg-[#8BC34A]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor">
+                            <path d="M6 15l5-5-5-5 1-2 7 7-7 7z"/> 
                         </svg>
                     </button>
                 </form>
@@ -97,13 +97,13 @@
                     <button>Clear All</button>
                 </div>
 
-                <div>
-                    <h1>Filter by price</h1>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-3xl font-semibold">Filter by price</h1>
                     <div>
-                        <input type="range" min="10" max="40" value="25">
-                        <div>
-                            <span>&#8377;10</span>
-                            <span>&#8377;40</span>
+                        <input type="range" min="10" max="40" class="w-[90%]">
+                        <div class="flex w-[90%] justify-end gap-4">
+                            <input type="text" inputmode="numeric" value="&#8377;10" class="border rounded-md border-gray-300 w-12 h-10 p-2" readonly>
+                            <input type="text" inputmode="numeric" value="&#8377;40" class="border rounded-md border-gray-300 w-12 h-10 p-2" readonly>
                         </div>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
 
             <!-- Other Pages -->
             <ul>
-                <li><a href="#Groceries">Groceries (10)</a></li>
-                <li><a href="#Juice">Juice (9)</a></li>
+                <li class="text-[#8BC34A] hover:text-[#6A9739]"><a href="#Groceries">Groceries (10)</a></li>
+                <li class="text-[#8BC34A] hover:text-[#6A9739]"><a href="#Juice">Juice (9)</a></li>
             </ul>
         </aside>
 
