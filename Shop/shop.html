@@ -72,9 +72,9 @@
     </nav>
     <!-- NavBar Ends Here -->
 
-    <main class="bg-[#F8F6F3] flex px-28 py-16">
+    <main class="bg-[#F8F6F3] flex px-32 py-16">
 
-        <aside class="flex flex-col w-1/4 gap-10 px-5">
+        <aside class="flex flex-col w-1/3 gap-10 px-5">
             <!-- Search Bar -->
             <div class="w-full max-w-md">
                 <form class="flex gap-5">
@@ -101,9 +101,10 @@
                     <h1 class="text-3xl font-semibold">Filter by price</h1>
                     <div>
                         <input type="range" min="10" max="40" class="w-[90%]">
-                        <div class="flex w-[90%] justify-end gap-4">
-                            <input type="text" inputmode="numeric" value="&#8377;10" class="border rounded-md border-gray-300 w-12 h-10 p-2" readonly>
-                            <input type="text" inputmode="numeric" value="&#8377;40" class="border rounded-md border-gray-300 w-12 h-10 p-2" readonly>
+                        <div class="flex w-[90%] justify-end gap-4 mt-2">
+                            <input type="text" inputmode="numeric" value="&#8377;10" class=" text-[#777777] border rounded border-gray-300 w-14 h-10 p-2 focus:outline-none" readonly>
+
+                            <input type="text" inputmode="numeric" value="&#8377;40" class=" text-[#777777] border rounded border-gray-300 w-14 h-10 p-2 focus:outline-none" readonly>
                         </div>
                     </div>
                 </div>
@@ -111,8 +112,8 @@
 
             <!-- Other Pages -->
             <ul>
-                <li class="text-[#8BC34A] hover:text-[#6A9739]"><a href="#Groceries">Groceries (10)</a></li>
-                <li class="text-[#8BC34A] hover:text-[#6A9739]"><a href="#Juice">Juice (9)</a></li>
+                <li><a href="#Groceries" class="text-[#8BC34A] hover:text-[#6A9739]">Groceries (10)</a></li>
+                <li><a href="#Juice" class="text-[#8BC34A] hover:text-[#6A9739]">Juice (9)</a></li>
             </ul>
         </aside>
 
@@ -120,20 +121,20 @@
         <div class="hidden md:block w-px bg-gray-300 mx-4"></div>
 
         <!-- Shopping Section -->
-        <div>
-            <div>
-                <div>
-                    <a href="#homePage">Home</a>
+        <div class="w-full pl-12">
+            <div class="flex flex-col gap-5">
+                <div class="flex gap-2 text-[#777777]">
+                    <a href="../Home Page/homePage.html">Home </a>
                     <p>/ Shop</p>
                 </div>
                 <div>
-                    <h1>Shop</h1>
+                    <h1 class="text-[#8BC34A] text-6xl font-semibold">Shop</h1>
                 </div>
             </div>
 
-            <div>
-                <p>Showing 1–9 of 12 results</p>
-                <select>
+            <div class="flex mt-16 gap-5 justify-between">
+                <p class="text-[#333333]">Showing 1-9 of 12 results</p>
+                <select class="text-[#666666] px-2 py-1 focus:border focus:border-black focus:outline-none">
                     <option value="Default" selected>Default Sorting</option>
                     <option value="Popularity">Sort by Popularity</option>
                     <option value="AvgRating">Sort by Average Rating</option>
@@ -142,6 +143,8 @@
                     <option value="High to Low">Sort by Price : High to Low</option>
                 </select>
             </div>
+
+            
         </div>
     </main>
 
