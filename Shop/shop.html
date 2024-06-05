@@ -72,12 +72,12 @@
     </nav>
     <!-- NavBar Ends Here -->
 
-    <main class="bg-[#F8F6F3] flex  py-16 px-8 xl:px-32">
+    <main class="bg-[#F8F6F3] flex flex-col gap-8 sm:gap-0 sm:flex-row py-16 px-8 xl:px-32">
 
-        <aside class="flex flex-col w-1/3 gap-10 xl:px-5">
+        <aside class="flex flex-col w-full sm:w-1/3 gap-4 sm:gap-10 xl:px-5">
             <!-- Search Bar -->
-            <div class="w-full max-w-md">
-                <form class="flex gap-5">
+            <div class="w-full">
+                <form class="flex justify-center sm:justify-normal gap-5">
                     <input type="text" placeholder="Search products..." class="w-[70%] px-4 py-2 border border-gray-300 rounded-md">
                     <button type="submit" class="px-3 bg-[#6A9739] text-white rounded-md hover:bg-[#8BC34A]">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor">
@@ -97,10 +97,10 @@
                     <button>Clear All</button>
                 </div>
 
-                <div class="flex flex-col gap-2">
-                    <h1 class="text-2xl font-semibold">Filter by price</h1>
+                <div class="flex flex-col gap-2 pl-10 sm:pl-0">
+                    <h1 class="text-[#111111] text-xl font-medium xl:text-2xl xl:font-semibold">Filter by price</h1>
                     <div>
-                        <input type="range" min="10" max="40" class="w-[90%]">
+                        <input type="range" min="100" max="1500" class="w-[90%]">
                         <div class="flex w-[90%] justify-end gap-4 mt-2">
                             <input type="text" inputmode="numeric" value="&#8377;10" class=" text-[#777777] border rounded border-gray-300 w-14 h-10 p-2 focus:outline-none" readonly>
 
@@ -111,13 +111,13 @@
             </div>
 
             <!-- Other Pages -->
-            <ul class="flex flex-col gap-2">
+            <ul class="flex items-center sm:items-start flex-col gap-2">
                 <li><a href="#Groceries" class="text-lg text-[#8BC34A] hover:text-[#6A9739] transition-colors duration-200">Groceries </a>(10)</li>
                 <li><a href="#Juice" class="text-lg text-[#8BC34A] hover:text-[#6A9739] transition-colors duration-200">Juice </a>(9)</li>
             </ul>
 
             <!-- Sidebar Products -->
-            <div class="flex flex-col gap-16">
+            <div class="hidden sm:flex flex-col gap-16">
                 <!-- Item1 -->
                 <div class="flex flex-col gap-2 w-[80%]">
                     <!-- Image -->
@@ -185,10 +185,10 @@
         </aside>
 
         <!-- Verical Separator Line -->
-        <div class="block w-px bg-gray-300 mx-4"></div>
+        <div class="hidden sm:block w-px bg-gray-300 mx-4"></div>
 
         <!-- Shopping Section -->
-        <div class="w-[95%] pl-12">
+        <div class="w-[95%] px-5 sm:pl-12">
             <div class="flex flex-col gap-5">
                 <div class="flex gap-2 text-[#777777]">
                     <a href="../Home Page/homePage.html">Home </a>
@@ -199,9 +199,9 @@
                 </div>
             </div>
 
-            <div class="flex mt-16 gap-5 justify-between">
+            <div class="flex flex-col sm:flex-row mt-8 sm:mt-16 gap-5 justify-between">
                 <p class="text-[#333333]">Showing 1-9 of 12 results</p>
-                <select class="bg-[#F8F6F3] text-[#666666] px-2 py-1 focus:border focus:border-black focus:outline-none">
+                <select class="bg-[#F8F6F3] text-[#666666] sm:px-2 py-1 focus:border focus:border-black focus:outline-none">
                     <option value="Default" selected>Default Sorting</option>
                     <option value="Popularity">Sort by Popularity</option>
                     <option value="AvgRating">Sort by Average Rating</option>
